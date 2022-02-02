@@ -1,0 +1,4 @@
+Array: 11111111 00000011 
+
+Number of 1's in 0 to 25: 10
+The 3 bit 1 is at position: 2

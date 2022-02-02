@@ -1,0 +1,20 @@
+bit at position 0:  1
+Starting Array: 
+   1   0   0   0
+   0   0   0   0
+
+Set:
+   1   0   0   1
+   0   0   0   0
+
+Clear:
+   0   0   0   0
+   0   0   0   0
+
+Complement:
+   1   1   1   1
+   1   1   1   1
+
+Flip(2):
+   1   1   0   1
+   1   1   1   1

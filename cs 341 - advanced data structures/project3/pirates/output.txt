@@ -1,0 +1,47 @@
+initial pirates: 
+pirate000 19 0
+pirate001 16 0
+pirate002 6 0
+pirate003 27 0
+pirate004 17 0
+pirate005 12 0
+pirate006 20 0
+pirate007 14 0
+pirate008 20 0
+pirate009 26 0
+pirate010 25 0
+pirate011 6 0
+pirate012 1 0
+pirate013 2 0
+pirate014 30 0
+pirate015 8 0
+pirate016 26 0
+pirate017 2 0
+pirate018 11 0
+pirate019 29 0
+
+Invalid hammer value.
+After commands: 
+pirate283 24 1
+pirate280 15 1
+pirate260 25 2
+pirate261 1 2
+pirate262 6 2
+pirate263 25 2
+pirate264 17 2
+pirate265 9 2
+pirate266 21 2
+pirate267 15 2
+pirate271 11 2
+pirate272 21 2
+pirate273 22 2
+pirate274 15 2
+pirate276 16 2
+pirate277 3 2
+pirate278 11 2
+pirate284 16 0
+pirate285 26 0
+pirate286 7 0
+
+Sword is at pirate pirate283
+Bar is at 25
