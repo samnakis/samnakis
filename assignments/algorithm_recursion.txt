@@ -1,0 +1,50 @@
+﻿Sam Nakis
+Algorithm - Assignment 6
+
+
+Problem:
+The problem is to reverse a word that the user inputs into the program.
+
+
+Input:
+The user will input the word they want the program to reverse and later input a letter to signify whether they want to continue using the program or not.
+
+
+Output:
+The program will output the word the user entered but reversed.
+
+
+Step-by-Step Solution:
+1. Make sure to include the string.h library before the main part of the program to use later
+2. Declare a void function that will be used to reverse the word
+3. Begin the main part of the program
+4. Declare two character variables, one for the word, and set the limit to 100 characters, and one for the yes or no choice later
+5. Print out a welcome message
+6. Skip line
+7. Begin a do-while loop that will continue while the user chooses to continue the program or enters an invalid choice
+8. Skip a line
+9. Prompt the user to enter a word that’s 100 characters or less
+10. Have the user input a word
+11. Skip a line
+12. Declare an integer variable for size and set it equal to the string length, which can be found using a command from the string library
+13. Call the function
+14. Print out a message that tells the user their reversed word
+15. Use a for loop to print out the word correctly
+16. Skip two lines
+17. Print out a message that asks the user if they want to continue using the program
+18. Have the user input their choice (will be Y or N)
+19. Create a while loop if the user enters something other than Y or N
+20. Print out a message in the loop that tells the user they had an invalid input and to input a new choice
+21. Collect their input
+22. End the loop
+23. Create an if statement for if the person says they don’t want to continue
+24. Print out a message thanking the user for using the program
+25. Create an empty else statement
+26. End the main part of the program
+27. Create the function definition
+28. In the function, create an if statement for if the word is over one letter long
+29. Set a character equal to the first letter of the word and switch it with the last letter
+30. Continue this until every letter has been switched to be correctly reversed
+31. Run the function again inside the function to create recursion
+32. Create an else statement that returns nothing
+33. End the function definition

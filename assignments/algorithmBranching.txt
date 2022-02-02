@@ -1,0 +1,42 @@
+﻿Sam Nakis
+Algorithm - Assignment 2
+
+
+Problem:
+        The problem is calculating wage.
+
+
+Input:
+        The user will input their hourly rate and hours worked.
+
+
+Output:
+        The user’s wage earned.
+
+
+Step-by-Step Solution:
+1. Display welcome message
+2. Skip lines
+3. Prompt user to enter their hourly rate
+4. Declare rate variable and initialize to 0
+5. Let user input their rate and store it
+6. Skip line
+7. Prompt user to enter their hours worked
+8. Declare hours variable and initialize to 0
+9. Let user input their hours and store it
+10. Skip line
+11. Declare wage variable and initialize to 0
+12. Set up if statement if the user did not work overtime
+   1. Only allow hours to be between 0 and 40 (including those) and rate to be 0 or above
+   2. Set wage = rate * hours
+1. Set up else if statement if the user worked overtime (over 40 hours) and makes less than or equal to $25 an hour
+   1. Hours need to be above 40 and rate needs to be between 0 and 25 (including those)
+   2. Set wage = (rate * 40) + (rate * 2 ) * (hours - 40)
+1. Set up else if statement if the user worked overtime (over 40 hours) and makes more than $25 an hour
+   1. Hours need to be above 40 and rate needs to be over 25
+   2. Set wage = (rate * 40) + (rate * 1.5) * (hours - 40)
+1. Set up else statement to say “Please try again.” if the user enters something invalid 
+2. Display the user’s calculated wage on screen
+3. Skip lines
+4. Display goodbye message
+5. Skip line
