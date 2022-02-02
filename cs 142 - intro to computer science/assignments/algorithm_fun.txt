@@ -1,0 +1,51 @@
+﻿Sam Nakis
+Algorithm - Assignment 4
+
+
+Problem:
+        Creating a calculator with options that users can pick from.
+
+
+Input:
+The user will input which numbers they want the calculator to use.
+
+
+Output:
+The program will output the solution using the option the user selected and the numbers they gave.
+
+
+Step-by-Step Solution:
+1. After #include <iostream> and before int main()
+2. Declare the input function
+   1. Return type of double
+   2. Both variables in the parameters have type double
+   3. Use the & symbol for pass-by-reference
+1. Declare the addition, subtraction, multiplication, and division functions
+   1. Return type of double
+   2. Both variables in the parameters have type double
+1. Declare the modulus function
+   1. Return type of integer
+   2. Both variables in the parameters have type integer
+1. Put int main() to begin the program body
+2. Print a welcome message for the calculator
+3. Skip two lines
+4. Declare and initialize variables for x, y, answer, (type double) and choice (type integer)
+5. Begin a do-while loop
+6. Print out the messages with the calculator options skipping lines in between each
+7. Prompt the user to enter their calculator setting choice
+8. Skip a line
+9. Write an if and else if statements for the calculator options
+   1. In each, run the input function and whichever function corresponds with that calculator option
+1. If the choice is to end the program, display a thank you message
+2. Make an else statement that prompts the user to enter a valid selection if they do not choose a number between 1 and 6
+3. End the do-while loop unless the choice is equal to 6 (which quits the program)
+4. End the body of the function with return 0; and a closed curly brace }
+5. Copy the function declarations and remove the semicolon at the end of each line
+6. For the input function, prompt the user to enter the numbers they want to use, skipping a line in between
+7. For each calculator option function
+   1. Declare variable answer and initialize to 0
+   2. State the operation with the corresponding variables (ex: answer = x + y)
+   3. Print out a statement with the mathematical function including the answer and the numbers the user entered (ex: 5+3 = 8)
+   4. For the division and modulus options
+      1. Create an if statement that prompts the user to enter a new value if they enter 0 for the second number
+         1. The else statement is just carrying out the function like normal

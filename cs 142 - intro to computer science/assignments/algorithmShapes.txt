@@ -1,0 +1,47 @@
+﻿Sam Nakis
+Algorithm - Assignment 1
+
+
+Problem:
+        The problem is finding the area of multiple shapes.
+
+
+Input:
+        The user will input numbers for side lengths of multiple shapes.
+
+
+Output:
+        The area of a shape.
+
+
+Step-by-Step Solution:
+1. Print a welcome message on the screen
+2. Print a title for the first shape (rectangle)
+3. Declare variables needed to calculate and display area (length, width, area)
+4. Skip line
+5. Prompt user to enter first number (length)
+6. Skip line
+7. Prompt user to enter second number (width)
+8. Set area equal to length times width
+9. Skip line
+10. Print out the area
+11. Skip two lines
+12. Print a title for the second shape (square)
+13. Declare variables needed to calculate and display area (side, area)
+14. Skip line
+15. Prompt user to enter a number (side length)
+16. Set area equal to side length squared
+17. Skip line
+18. Print out the area
+19. Skip two lines
+20. Print a title for the third shape (triangle)
+21. Declare variables needed to calculate and display area (base, height, area)
+22. Skip line
+23. Prompt user to enter the first number (base)
+24. Skip line
+25. Prompt user to enter the second number (height)
+26. Set area equal to (base times height) divided by two
+27. Skip line
+28. Print out area
+29. Skip two lines
+30. Print out a goodbye message on the screen

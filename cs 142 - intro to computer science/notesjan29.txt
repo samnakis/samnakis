@@ -1,0 +1,39 @@
+#include <iostream>
+
+int main ()
+{
+	double myVariable;
+	
+	double myVariable1;
+	double myVariable2;
+	double myVariable3;
+	
+	//OR
+	
+	//double myVariable1, myVariable2, myVariable3;
+
+	//myVariable = "Sam";
+	
+	int myInteger = 15.7;
+	
+	std::cout << myInteger << std::endl << std::endl;
+	
+	int x(0); 
+	x = 15;
+	
+	int y; = 10;
+	int z(0);
+	
+	std::cout << z << "\n";
+	
+	std:cpit << std::endl;
+	
+	z = x + y;
+	
+	std::cout << z << "\n";
+	
+	std::cin >> myInteger;
+	std::cout << "\t" << myInteger <<std::endl;
+
+	return 0;
+}
