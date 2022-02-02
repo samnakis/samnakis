@@ -1,0 +1,9 @@
+CHIP BK {
+    IN g, p, ghat, phat;
+    OUT G, P;
+
+    PARTS:
+	And( a = p, b = ghat, out = w1);
+	Or( a = g, b = w1, out = G);
+	And( a = p, b = phat, out = P);
+}

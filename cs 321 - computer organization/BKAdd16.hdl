@@ -1,0 +1,40 @@
+// This file is part of www.nand2tetris.org
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/02/Adder16.hdl
+
+/**
+ * Adds two 16-bit values.
+ * The most significant carry bit is ignored.
+ */
+
+CHIP Add16 {
+    IN a[16], b[16];
+    OUT out[16];
+
+    PARTS:
+	Or16( a = a, b = b, out = g);
+	Xor16( a = a, b = b, out = p);
+	
+	BK( g = g[0], p = p[0], ghat = g[1], phat = p[1], G = w1, P = w2);
+	BK( g = g[2], p = p[2], ghat = g[3], phat = p[3], G = w3, P = w4);
+	BK( g = g[4], p = p[4], ghat = g[5], phat = p[5], G = w5, P = w6);
+	BK( g = g[6], p = p[6], ghat = g[7], phat = p[7], G = w7, P = w8);
+	BK( g = g[8], p = p[8], ghat = g[9], phat = p[9], G = w9, P = w10);
+	BK( g = g[10], p = p[10], ghat = g[11], phat = p[11], G = w11, P = w12);
+	BK( g = g[12], p = p[12], ghat = g[13], phat = p[13], G = w13, P = w14);
+	BK( g = g[14], p = p[14], ghat = g[15], phat = p[15], G = w15, P = w16);
+	
+	BK( g = w1, p = w2, ghat = w3, phat = w4, G = w17, P = w18);
+	BK( g = w5, p = w6, ghat = w7, phat = w8, G = w19, P = w20);
+	BK( g = w9, p = w10, ghat = w11, phat = w12, G = w21, P = w22);
+	BK( g = w13, p = w14, ghat = w15, phat = w16, G = w23, P = w24);
+	
+	BK( g = w17, p = w18, ghat = w19, phat = w20, G = w25, P = w26);
+	BK( g = w21, p = w22, ghat = w23, phat = w24, G = w27, P = w28);
+	
+	BK( g = w25, p = w26, ghat = w27, phat = w28, G = w29, P = w30);
+	
+	BK( g = w25, p = w26, ghat = w21, phat = w22, G = w31, P = w32);
+	
+}
