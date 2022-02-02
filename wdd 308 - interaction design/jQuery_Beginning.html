@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery</title>
+    <script src="../wdd 308/jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+    <script src="jQuery_Beginning.js" rel="text/javascript"></script>
+    <style>
+        #drinkList li {
+            list-style-type: none;
+            padding: 5px 10px;
+            margin: 2px 0px;
+            width: 120px;
+            text-align: left;
+        }
+        
+        .hot {
+            background-color: indianred;
+        }
+        
+        .cold {
+            background-color: steelblue;
+        }
+        
+        ul {
+            margin-right: 40px;
+        }
+        
+        form {
+            background-color: lightgray;
+            padding: 7px;
+            border: 1px solid black;
+        }
+        
+        div {
+            float: left;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>Wed Design and Development</li>
+        <li>Creative Media and Entertainment</li>
+        <li>Sports Media</li>
+        <li>Journalism</li>
+    </ul>
+    <form>
+        <label>Name:</label>
+        <input type="text" name="name" /><br/>
+        <label>Comments:</label>
+        <textarea name="comments"></textarea><br/>
+        <input type="button" id="formBtn" value="Submit Comments" /></form>
+    <div>
+        <ul id="drinkList">
+            <li class="hot">Coffee</li>
+            <li class="hot">Hot Chocolate</li>
+            <li class="hot">Tea</li>
+            <li class="cold">Iced Tea</li>
+            <li class="cold">Milk</li>
+            <li class="cold">Beer</li>
+        </ul>
+        <input type="button" value="Change Color" id="tableBtn" /></div>
+    <input type="button" value="Change Image" id="imgBtn" /><br/>
+    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/jQuery.png" />
+
+</body>
+
+</html>

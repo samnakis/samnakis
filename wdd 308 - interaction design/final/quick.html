@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>how quick are you?</title>
+    <style>
+        .target {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgb(59, 126, 59);
+            position: absolute;
+        }
+        
+        .target:hover {
+            background-color: rgb(138, 204, 138);
+        }
+    </style>
+</head>
+
+<body>
+    <input type="button" value="start game" id="startGame">
+
+    <div id="inGame">
+        <p>time remaining: <i id="timeLeft"></i></p>
+        <p>score: <i id="score"></i></p>
+    </div>
+
+    <div id="highScores">
+        <p>high scores:</p>
+        <ol>
+            <li id="hs1"></li>
+            <li id="hs2"></li>
+            <li id="hs3"></li>
+            <li id="hs4"></li>
+            <li id="hs5"></li>
+        </ol>
+
+    </div>
+
+    <div id="targetField"></div>
+
+    <script src="quick.js"></script>
+</body>
+
+</html>

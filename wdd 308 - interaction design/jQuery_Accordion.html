@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Accordion</title>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        
+        article {
+            width: 50%;
+            margin: 0 auto;
+        }
+        
+        .description {
+            display: none;
+        }
+        
+        button {
+            width: 100%;
+            background: -webkit-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: -o-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: -moz-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: linear-gradient( rgb(100, 100, 100), rgb(50, 50, 50));
+            border-style: none;
+            margin: 0;
+            padding: 10px;
+            color: lightgray;
+        }
+        
+        .description {
+            box-sizing: border-box;
+            width: 98%;
+            padding: 20px;
+            border: 1px solid gray;
+            background-color: white;
+            margin: 0 auto;
+        }
+    </style>
+    <script src="jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <article>
+        <section>
+            <button class="acBtn">HTML</button>
+            <div class="description">
+                <p>Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.</p>
+            </div>
+        </section>
+        <section>
+            <button class="acBtn">CSS</button>
+            <div class="description">
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language. </p>
+            </div>
+        </section>
+        <section>
+            <button class="acBtn">Javascript</button>
+            <div class="description">
+                <p>JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.</p>
+            </div>
+        </section>
+        <section>
+            <button class="acBtn">jQuery</button>
+            <div class="description">
+                <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.</p>
+            </div>
+        </section>
+    </article>
+
+    <script src="jQuery_Accordion.js"></script>
+</body>
+
+</html>

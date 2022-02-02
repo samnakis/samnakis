@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>coin flip</title>
+    <style>
+        img {
+            height: 200px;
+            width: auto;
+            padding: 20px;
+        }
+        
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 15%;
+        }
+        
+        th {
+            text-align: center;
+            border: 1px solid rgb(102, 102, 102);
+            padding: 10px;
+        }
+        
+        td {
+            text-align: left;
+            border: 1px solid rgb(102, 102, 102);
+            padding: 5px;
+        }
+        
+        tr:nth-child(even) {
+            background-color: rgb(201, 201, 201);
+        }
+        
+        #ratio {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>coin flip!</h2>
+
+    <input type="button" value="flip a coin!">
+
+    <div id="coin"></div>
+
+    <table>
+        <tr>
+            <th>flip</th>
+            <th>result</th>
+        </tr>
+    </table>
+
+    <p>the flip ratio of heads to tails is: <i id="ratio"></i></p>
+
+    <script src="coinFlip.js"></script>
+</body>
+
+</html>

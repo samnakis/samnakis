@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery List</title>
+    <style>
+        * {
+            font-family: verdana, sans-serif;
+            font-size: 1em;
+        }
+        
+        ul li {
+            list-style-type: none;
+            background-color: rgb(0, 150, 150);
+            line-height: 150%;
+            border-bottom: 1px solid white;
+            padding: 7px 14px;
+            width: 200px;
+        }
+        
+        input {
+            background-color: teal;
+            border: none;
+            border-radius: 5px;
+            padding: 4px 8px;
+            color: white;
+            position: relative;
+            left: 40px;
+            margin-bottom: 25px;
+        }
+        
+        * {
+            font-family: verdana, sans-serif;
+        }
+        
+        body {
+            background-color: rgb(25, 25, 25);
+        }
+        
+        .problem {
+            background-color: rgb(200, 200, 200);
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+        
+        h3 {
+            color: white;
+            background-color: teal;
+            padding: 10px;
+            margin: 0;
+            border-bottom: 2px solid black;
+            font-size: 18px;
+        }
+        
+        p {
+            margin: 20px;
+        }
+        
+        h2 {
+            color: blue;
+        }
+    </style>
+    <script src="jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <div class="problem">
+        <h3>Progress Project 3</h3>
+        <p>For this assignment, you will take the add/remove list from your previous assignment and recreate it using JUST jQuery.</p>
+        <p>You will also need to add the following:
+            <ol>
+                <li>When the item is added, it will fade up and slide in to full list item width.</li>
+                <li>Create a rollover effect for the list items.</li>
+                <li>When the list item is clicked on, it is removed and its width and opacity will go to 0.</li>
+                <li>Write code so that if the user clicks okay in the prompt box, but DOES NOT enter a value, nothing will appear in the list. </li>
+            </ol>
+            <ul id="webList">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+            </ul>
+            <input type="button" value="Add Item" />
+    </div>
+    <script src="jQueryList.js" rel="text/javascript"></script>
+</body>
+
+</html>

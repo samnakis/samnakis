@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interest Calculator</title>
+    <style>
+        h1 {
+            background-color: #20603b;
+            color: white;
+            padding: 10px;
+        }
+        
+        h2 {
+            background-color: seagreen;
+            color: white;
+            padding: 10px;
+        }
+        
+        h3 {
+            color: seagreen;
+            background-color: rgb(200, 200, 200);
+            padding: 10px;
+            margin: 0px 10px;
+        }
+        
+        p,
+        code {
+            margin: 20px;
+        }
+    </style>
+    <script type="text/javascript">
+        function numStrings() {
+            var textInput = document.getElementById('tInput').value;
+            var numberInput = document.getElementById('nInput').value;
+            console.log("Text Input Field: " + textInput + "(" + typeof(textInput) + ")");
+            console.log("Number Input Field: " + numberInput + "(" + typeof(numberInput) + ")");
+            document.getElementById('sResults').innerHTML = "First Results: " + textInput + numberInput;
+        }
+
+        function addNums() {
+            var textInput2 = parseFloat(document.getElementById('tInput').value);
+            var numberInput2 = parseFloat(document.getElementById('nInput').value);
+            console.log("Text Input Field: " + textInput2 + "(" + typeof(textInput2) + ")");
+            console.log("Number Input Field: " + numberInput2 + "(" + typeof(numberInput2) + ")");
+            document.getElementById('pfResults').innerHTML = "parseFloat Results: " + (textInput2 + numberInput2);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Interest Calculator</h1>
+    <p>For this assignment, you are going to use your knowledge of JavaScript to create an interest calculator. Everything you need to know to get this to work you have learned in class <i>except</i> for a couple of things. The rest of this document will
+        explain in detail those things that you need to make this work properly.</p>
+    <h2>Interest Calculation</h2>
+    <p>Unless you have a secret passion for finances, you probably do not know the calculation for finding interest. Therefore, the formula below will help guide your assignment:
+    </p>
+    <p id="formula">Total = Principle(1+Rate*Time)</p>
+    <p><i>Principle</i> is the amount of money invested.<br/>
+        <i>Rate</i> is the interest rate you are receiving<br/>
+        <i>Time</i> is the amount of time the money will accrue interest. (In this case, you will use <i>years.</i>)</p>
+    <br/>
+    <h3>parseFloat</h3>
+    <p>We haven't talked about getting numeric values from input elements. You will notice that it doesn't matter whether the input element is a text or number input element, it will result in a <i>string</i>. Go ahead and try it. I have included the following
+        input elements to demonstrate this point. Click on the <b>Check Console</b> button after you input values in each text field:</p>
+    <form><label>Text Input</label><input type="text" name="tInput" id="tInput" /><br/>
+        <label>Number Input</label><input type="number" name="nInput" id="nInput" /><br/><input type="button" value="Check Console" onclick="numStrings()" />
+        <input type="button" value="Add Values" onclick="addNums()" /></form>
+    <p id="sResults"></p>
+    <p id="pfResults"></p>
+    <br/>
+    <p>You can see on the page that even when I try to add the <i>number</i> values together, it treats them as strings. That is because they <em>are </em> strings. You need to convert them to integers before you can do any computations.</p>
+    <p>Luckily, changing these string values to integers is fairly simple.To do this, we use <i>parseFloat</i>. This will turn our string numbers into real integers. To use parseFloat, your code will look something like this:</p>
+    <code>var num1 = parseFloat(document.getElementById('nInput').value);</code>
+    <p>Now click the <b>Add Values</b> button to see this in action.</p>
+    <h3>Fixed Values</h3>
+    <p>Also - if you would like your values to end in only 2 decimal places, simply add <i>toFixed()</i> after your variable with the number of decimal places you would like inside the parentheses.</p>
+    <code>myNumber.toFixed(2)  //Will result in two decimal places (ex. 5.00)</code>
+
+
+
+    <h2>Interest Calculator</h2>
+    <p>Now you know everything you need to know to get started. This is what your calculator should look like after someone has entered values:</p>
+
+    <p>
+        <form>
+            <label>Principle</label><input type="number" name="pInput" id="pInput" /><br/>
+            <label>Interest Rate</label><input type="number" name="irInput" id="irInput" /><br/>
+            <label>Time</label><input type="number" name="tiInput" id="tiInput" /><br/>
+            <input type="button" value="Calculate" onclick="calculateRate()" />
+        </form>
+    </p>
+
+    <h3>Your results</h3>
+    <p>With a beginning principle of $<i id="principle">principle</i> and with a growth rate of <i id="growthRate">growth rate</i>% for <i id="time">time</i> years, your total interest will be $<i id="interest">interest</i> with a grand total of $<i id="grandTotal">total</i>.</p>
+
+
+    <script src="interestCalculator.js"></script>
+</body>
+
+</html>

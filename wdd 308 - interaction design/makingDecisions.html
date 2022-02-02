@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Making Decisions</title>
+    <style>
+        div {
+            border: 1px solid black;
+            padding: 0 15px 15px;
+            margin-bottom: 10px;
+            background-color: white;
+        }
+        
+        h1 {
+            color: #d2510c;
+        }
+        
+        body {
+            background-color: rgb(36, 135, 240);
+        }
+        
+        #p1Answer,
+        #p2Answer,
+        #p3Answer,
+        #p4Answer {
+            color: #da5da1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="prob1">
+        <h1>Problem 1</h1>
+        <p>Create a prompt that asks a user for their age. Check to see if the value is above 26. If true, print <i>Spaceship Navigation Granted</i>. If false, print <i>Spaceship Navigation Denied.</i></p>
+        <p id="p1Answer"></p>
+    </div>
+    <div id="prob2">
+        <h1>Problem 2</h1>
+        <p>Create an array with the following values: 87,56,92,77. Find the average. If the average is above 75, print out "You are in the top 25% of the class!" If it is between 75 and 60, print "You passed the class!" If it is lower than 60, print "Sorry
+            - you did not pass the class. Better luck next time!"</p>
+        <p id="p2Answer">"</p>
+    </div>
+    <div>
+        <h1>Problem 3</h1>
+        <p>Have a button that chooses a random number between 1-5 (including both). Print the number. Write the following for the respective numbers: </p>
+        <ul>
+            <li>1: The lowest number you can get</li>
+            <li>2: This is the lowest even number you can get</li>
+            <li>3: Right smack in the middle</li>
+            <li>4: Good number!</li>
+            <li>5: Way to roll! </li>
+        </ul>
+        <input type="button" value="random number" onclick="getRandomNum()" />
+        <p id="p3Answer"></p>
+    </div>
+    <div>
+        <h1>Problem 4</h1>
+        <p>Ask the question: True/False: I am loving JavaScript! Are you? Include an input for them to answer yes or no. After they click the button to submit, check if it's true. If so, print out <i>Awesome!</i> If not, print out <i>I am sorry. I hope it gets better for you!</i></p>
+        <input type="button" value="get question" onclick="getQuestion4()" />
+        <p id="p4Answer"></p>
+    </div>
+    <script src="makingDecisions.js"></script>
+</body>
+
+</html>

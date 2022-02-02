@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Built-In Objects</title>
+</head>
+
+<body>
+    <button onclick="butler()">butler university</button>
+    </br>
+    </br>
+
+    <button onclick="printPage()">print page</button>
+    <p id="animals">dog, cat, lizard, fish, bird, snake</p>
+    <p id="favAnimal"></p>
+
+    <button onclick="randomNum1()">random number</button>
+    <p id=randomNum1></p>
+    <button onclick="randomNum2()">random number 1-10</button>
+    <p id=randomNum2F></p>
+    <p id=randomNum2C></p>
+    <p id=randomNum2R></p>
+
+    <script>
+        function randomNum1() {
+            var randomNumber = Math.random();
+            document.getElementById('randomNum1').innerHTML = randomNumber;
+        }
+
+        function randomNum2() {
+            var randomNumber = (10 * Math.random()) + 1;
+            document.getElementById('randomNum2F').innerHTML = "floor: " + Math.floor(randomNumber);
+            document.getElementById('randomNum2C').innerHTML = "ceiling: " + Math.ceil(randomNumber);
+            document.getElementById('randomNum2R').innerHTML = "round: " + Math.round(randomNumber);
+        }
+
+        var animals = document.getElementById('animals').innerHTML;
+        var animalArray = animals.split(", ");
+        document.getElementById('favAnimal').innerHTML = "my favorite animal is a " + animalArray[0] + ".";
+
+        var dog = "janie";
+        // window.alert("hello");
+        // alert("world");
+        // var name = prompt("what is your name?")
+        // document.write("good morning " + name + ". i hope you have a great day!");
+
+        function butler() {
+            open("http://www.butler.edu");
+        }
+
+        function printPage() {
+            window.print();
+        }
+
+        document.write("<p>last updated: " + document.lastModified + "</p>");
+    </script>
+
+</body>
+
+</html>

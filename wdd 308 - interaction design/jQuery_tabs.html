@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Tabs</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.9em;
+        }
+        
+        #contentBox {
+            width: 50%;
+            min-width: 450px;
+            margin: 0 auto;
+        }
+        
+        nav {
+            width: 420px;
+            margin: 0 auto;
+        }
+        
+        nav li {
+            box-sizing: border-box;
+            padding: 1rem 1.5rem;
+            display: inline-block;
+            text-align: center;
+            border-radius: 5px 5px 0 0;
+            background: -webkit-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: -o-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: -moz-linear-gradient(rgb(100, 100, 100), rgb(50, 50, 50));
+            background: linear-gradient( rgb(100, 100, 100), rgb(50, 50, 50));
+        }
+        
+        nav a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+        }
+        
+        nav a:hover {
+            color: crimson;
+        }
+        
+        .activeLink>a {
+            color: lightSeaGreen;
+        }
+        
+        .sectionBox {
+            background-color: rgb(50, 50, 50);
+            padding: 20px;
+            border-radius: 7px;
+        }
+        
+        section {
+            box-sizing: border-box;
+            padding: 20px;
+            background-color: white;
+            display: none;
+            height: 200px;
+        }
+        
+        .active {
+            display: block;
+        }
+        
+        p {
+            margin: 1rem 0;
+        }
+    </style>
+    <script src="jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <div id="contentBox">
+        <nav>
+            <ul>
+                <li class="activeLink"><a href="#HTab">HTML</a></li>
+                <li><a href="#CTab">CSS</a></li>
+                <li><a href="#JSTab">Javascript</a></li>
+                <li><a href="#JQTab">jQuery</a></li>
+            </ul>
+        </nav>
+        <div class="sectionBox">
+            <section class="active" id="#HTab">
+                <h1>HTML</h1>
+                <p>Hypertext Markup Language is the standard markup language for creating web pages and web applications. With Cascading Style Sheets and JavaScript it forms a triad of cornerstone technologies for the World Wide Web.</p>
+            </section>
+
+
+            <section id="#CTab">
+                <h1>CSS</h1>
+                <p>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language. </p>
+            </section>
+
+            <section id="#JSTab">
+                <h1>Javascript</h1>
+                <p>JavaScript, often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language.</p>
+            </section>
+
+            <section id="#JQTab">
+                <h1>jQuery</h1>
+                <p>jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML. It is free, open-source software using the permissive MIT License.</p>
+            </section>
+        </div>
+    </div>
+    <script src="jQuery_tabs.js"></script>
+</body>
+
+</html>

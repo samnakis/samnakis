@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>jQuery Modal Window</title>
+    <style>
+        * {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        
+        .modalwindow {
+            position: fixed;
+            display: none;
+            z-index: 10;
+            width: 500px;
+            background: lightgray;
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+            -webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+        }
+        
+        h2 {
+            background-color: olive;
+            padding: 15px;
+            font-size: 25px;
+            color: white;
+            margin: 0;
+            font-family: arial;
+            text-align: center;
+            border-bottom: 2px solid white;
+        }
+        
+        .content {
+            padding: 20px;
+            color: black;
+            font-size: 1rem;
+            line-height: 150%;
+        }
+        
+        .close {
+            float: right;
+            margin-top: -51px;
+            margin-right: 15px;
+            width: 15px;
+            height: 15px;
+            display: block;
+            padding: 8px 10px 10px;
+            color: #fff;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        a {
+            display: block;
+            padding: 8px 10px 10px;
+            width: 15px;
+            height: 15px;
+            text-align: center;
+            background-color: darkolivegreen;
+            border: 2px solid white;
+            font-weight: bold;
+            border-radius: 50%;
+            box-shadow: 2px 2px 4px gray;
+            text-decoration: none;
+            color: white;
+        }
+        
+        #myBall {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: crimson;
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+    <script src="jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <!-- #modal is the id of a DIV defined in the code below -->
+    <a href="#modal" id="xBtn">X</a>
+
+    <!-- Modal window starts here -->
+    <div id="modal" class="modalwindow">
+        <h2>Simple Modal Window</h2>
+        <a href="#" class="close">X</a>
+
+        <div class="content">
+            <p>This is a simple modal window. A modal window is a window that the user is forces to interact with before it they can go back to the parent application/website.</p>
+            <p>You have seen these used many times:</p>
+            <ul>
+                <li>Sales windows</li>
+                <li>Subscribe windows</li>
+                <li>"Don't leave" windows</li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="myBall"></div>
+    <!-- Javascipt and jQuery files go here -->
+    <script src="jQuery_modal.js"></script>
+</body>
+
+</html>

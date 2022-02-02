@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Loops</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            background-color: #d2510c;
+            padding: 10px 20px;
+            color: white;
+        }
+        
+        p {
+            margin: 20px 10px;
+        }
+        
+        ol {
+            position: relative;
+            left: 40px;
+        }
+        
+        h4 {
+            margin: 10px;
+            background-color: rgb(36, 135, 240);
+            padding: 5px;
+            color: white;
+            font-weight: normal;
+        }
+        
+        body {
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Loops Assignment</h2>
+    <p>Instructions: You will create an array that has months listed from January - December. You will use this array for two different things:</p>
+    <ol>
+        <li>Print today's date using the date object. For example, October 31, 2017</li>
+        <p id="date"></p>
+        <li>Create a list of the months so that each month appears on a different line. Now you will write code that will place <i>--> Current Month</i> after the current month as illustrated below:<br/> March --> <i>Current Month</i></li>
+        <p id="monthList"></p>
+        <li>Lastly, you will populate a dropdown list of the months using a for loop.</li>
+        <p id="monthDropDown"></p>
+
+        <p>
+            <button onclick="getOption()">
+                Check Holiday
+            </button>
+        </p>
+
+        <p>
+            The holiday of the month you selected is:
+            <i id="holiday">...</i>
+        </p>
+    </ol><br/>
+
+    <h4>EXTRA CREDIT</h4>
+    <p>Create another array that lists one holiday per month. When the user selects a month from the drop down menu, the holiday will appear underneath the drop-down with the selected month.</p>
+
+    <script src="monthLoop.js"></script>
+</body>
+
+</html>

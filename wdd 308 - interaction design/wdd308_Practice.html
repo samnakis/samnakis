@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WDD308: Practice</title>
+    <style>
+        body {
+            background-color: rgb(240, 240, 240);
+            line-height: 150%;
+        }
+        
+        h2 {
+            color: forestgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>WDD308 Instructions</h1>
+        <p>Create an html file and create a link to a javascript file.</p>
+        <h2>Current Course</h2>
+        <ol>
+            <li>Create the following variables with any values you want:
+                <ul>
+                    <li>Course Number (with designator)</li>
+                    <li>Course Name</li>
+                    <li>Credit Hours</li>
+                    <li>Required Class (true or false)</li>
+                </ul>
+            </li>
+            <li>Create another variable that will marry the course number with the course name with a colon in between. Ex. WDD308: Interaction Design</li>
+            <li>Print out the following so that it always appears at the bottom of the HTML page:<br/>Ex. I am currently enrolled in WDD308: Interaction Design.</li>
+        </ol>
+        <h2>Course Load</h2>
+        <ol>
+            <li>Create an array that will hold the number or credit hours you have taken for the past four semesters.</li>
+            <li>Create a paragraph in your HTML page. Give it an id of "creditHrs."</li>
+            <li>Add a horizontal line (hr) after the paragraph. </li>
+            <li>Target that paragraph in your javascript document and create an ordered list with the following information:
+                <ol>
+                    <li>Credit Hours by semester: (print the entire array)</li>
+                    <li>Total Number of Credit Hours: (print total credit hours)</li>
+                    <li>Average per year: (print average number of credit hours per year)</li>
+                    <li>Average per semester: (print average number of credit hours per semester)</li>
+                </ol>
+            </li>
+        </ol>
+        <p id="creditHrs"></p>
+        <hr>
+        <h2>School Supplies</h2>
+        <ol>
+            <li>You are buying a school supplies at the Butler Bookstore. Here are the list of items for sale:
+                <ul>
+                    <li>Textbook: $75</li>
+                    <li>Notebook: $5</li>
+                    <li>Calculator: $30</li>
+                    <li>Pen: $2</li>
+                    <l1>Pencil: $.75</l1>
+                    <li>USB Drive: $6</li>
+                </ul>
+                <li> You need to purchase 2 textbooks, 1 notebook, 1 calculator, 4 pens, 3 pencils and 1 USB drive. </li>
+                <li>You get a student discount oif 10%.</li>
+                <li>Create a div on your HTML document and give it an ID.</li>
+                <li>Create an ordered list and list the following:
+                    <ol>
+                        <li>SubTotal: (subtotal of all items before discount and tax)</li>
+                        <li>Discount Savings: (dollar amount of your discount</li>
+                        <li>Total: (calculate total - discount and then add tax to new total)<br/>NOTE: Tax rate is 0.08</li>
+                    </ol>
+                </li>
+        </ol>
+        <div id="ssAnswers"></div>
+
+        <h2>Your Information</h2>
+        <ol>
+            <li>Create an object that holds the following information about yourself:
+                <ul>
+                    <li>First name</li>
+                    <li>Last name</li>
+                    <li>Age</li>
+                    <li>Address</li>
+                    <li>Hometown</li>
+                    <li>State</li>
+                    <li>FullAddress (this will be a method that will create your address that will look like this:<br/>123 Main Street<br/>Indianapolis, Indiana</li>
+                </ul>
+            </li>
+            <li>Create an h2 in your HTML document that reads: My Information.</li>
+            <li>Create a paragraph that follows the h2 and give it an id.</li>
+            <li>Add a horizontal line (hr) after the paragraph. </li>
+            <li>Target this paragraph to display the following information:<br/>
+                <b>Sally Smith</b><br/> 123 Main Street<br/> Indianapolis, Indiana
+            </li>
+        </ol>
+        </br>
+        <h2>my information</h2>
+        <p id="myInfoAnswer"></p>
+        <hr>
+
+
+        <h2>My Friends</h2>
+        <ol>
+            <li>Create an h2 in your HTML document that reads: My Friends.</li>
+            <li>Create two paragraphs that follows the h2 and give it each an id.</li>
+            <li>Add a horizontal line (hr) after the paragraph. </li>
+            <li>Create a constructor object called friends that will allow you to create multiple friend objects. You should include the following information:
+                <ul>
+                    <li>First name</li>
+                    <li>Last name</li>
+                    <li>Age</li>
+                    <li>Email</li>
+                    <li>How you met</li>
+                    <li>Fun fact</li>
+                </ul>
+            </li>
+            <li>Create two friends.</li>
+            <li>Use the paragraphs to print out the following for each friend: <br/>Sally Smith: loves sewing and knitting</li>
+        </ol>
+        <h2>my friends</h2>
+        <p id="friends1"></p>
+        <p id="friends2"></p>
+        <hr>
+    </main>
+    <section></section>
+
+    <script src="wdd308_Practice.js"></script>
+</body>
+
+</html>

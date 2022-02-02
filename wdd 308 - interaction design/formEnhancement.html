@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Form Enhancement</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        main {
+            display: grid;
+            grid-template: 1fr/2fr 1fr;
+            line-height: 150%;
+            height: 100vh;
+        }
+        
+        aside {
+            background-color: rgb(220, 220, 220);
+            border-left: 1px solid black;
+        }
+        
+        aside h1 {
+            background-color: black;
+            color: white;
+            box-sizing: border-box;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        form {
+            background-color: mediumSeaGreen;
+            padding: 1rem;
+            border: 1px solid black;
+            margin: 1.5rem;
+        }
+        
+        label {
+            width: 75px;
+            display: inline-block;
+            text-align: right;
+        }
+        
+        input+label {
+            display: inline;
+        }
+        
+        .submit {
+            display: inline-block;
+            position: relative;
+            left: 79px;
+            margin-top: 0.5rem;
+        }
+        
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        
+        td,
+        th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        
+        th {
+            background-color: mediumSeaGreen;
+        }
+        
+        td {
+            background-color: rgb(234, 234, 234);
+        }
+        
+        h2 {
+            font-size: 1.2rem;
+            padding: 0.5rem;
+            background-image: linear-gradient( rgb(220, 220, 220) 60%, rgb(200, 200, 200));
+            border: 1px solid gray;
+        }
+        
+        h2:hover {
+            cursor: pointer;
+        }
+        
+        section {
+            padding: 1rem;
+        }
+        
+        section>code {
+            background-color: rgb(234, 234, 234);
+            padding: 0.3rem 1rem;
+            border: 1px solid black;
+            color: seaGreen;
+            display: block;
+            margin: 1rem;
+        }
+        
+        img {
+            height: 25px;
+            width: auto;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h1>Form Enhancement</h1>
+            <h2>The Form Element</h2>
+            <section>
+                <p>We learned about DOM selectors such as <code>getElementsByTagName</code>, but we didn't talk about the form collection. We normally use the other selectors to target parts of a form, but there are some reasons you may want to use the form
+                    collection.
+                </p>
+                <p>You can use the form collection to target multiple forms and the following:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Method</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr>
+                            <td><code>action</code></td>
+                            <td><code>submit()</code></td>
+                            <td><code>submit</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>method</code></td>
+                            <td><code>reset()</code></td>
+                            <td><code>reset</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>name</code></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>elements</code></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+                <p>There is also an element collection. The following is a list of form controls:</p>
+                <div>
+                    <table>
+                        <tr>
+                            <th>Property</th>
+                            <th>Method</th>
+                            <th>Event</th>
+                        </tr>
+                        <tr>
+                            <td><code>value</code></td>
+                            <td><code>focus()</code></td>
+                            <td><code>blur</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>type</code></td>
+                            <td><code>blur()</code></td>
+                            <td><code>focus</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>name</code></td>
+                            <td><code>select()</code></td>
+                            <td><code>click</td></tr>
+            <tr><td><code>defaultValue</code></td>
+                            <td><code>click()</code></td>
+                            <td><code>change</td></tr>
+            <tr><td><code>form</code></td>
+                            <td></td>
+                            <td><code>input</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>disabled</code></td>
+                            <td></td>
+                            <td><code>keydown<br/>keyup<br/>keypress</td></tr>
+            <tr><td><code>checked</code></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>defaultChecked</code></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><code>selected</code></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <h2>Reveal Password</h2>
+            <section>
+                <p>We are going to enhance our form using some of these controls to show/hide our password in this first example. Since there are multiple forms on this page, we need to target the first one. We are going to do this using the form collection:</p>
+                <code>var passForm = document.forms[0];</code>
+                <p>Now we are going to add an event listener to the eye icon on the form. When the user clicks it, two things will happen: (1) the image will change and (2) you will see the password:</p>
+                <code>var passBtn = passForm.getElementsByTagName('img')[0];</code>
+                <p>Now add the event listener to this button so that it calls a function called <i>showPassword</i>.</p>
+                <p>Let's write this function. Remember - it needs to do two different things and it all depends on what icon is showing when the user clicks on it: <i>showPassIcon</i> or <i>hidePassIcon</i>. So let's figure out how to get that information.</p>
+                <p>The only place where that information is available is in the src attribute of the image. We already have a variable holding the img, so let's find the value of its src attribute. To do this, we use the getAttribute method that will get
+                    us the value of the src attibute and sset it equal to a variable:</p>
+                <code>var imgSrc = passBtn.getAttribute('src');</code>
+                <p>If you do a console.log on this, you should get the image address. But we don't want the whole things, we just want to see if "hide" or "show" is part of that value. To do that, we are going to use the <i>indexOf</i> method of the string
+                    object. What this really does is get us the <i>location</i> of that string we are looking for. For instance, if we used <i>indexOf('dog')</i> on the string "I love my dog," it would return <i>10. (Remember to start the count at 0).</i></p>
+                <p>So how does this help us? Easy. If our string is found in the img src string, it will give us a number greater than 0. If it is not found, it will give us -1. See? Now we can use our math skills. </p>
+                <p>First - let's see if our image is set to the hide image:</p>
+                <code>var hidePassImg = imgSrc.indexOf('hide');</code>
+                <p>If you do a console.log on this, you should get 51, I believe. Or at least a number greater than 0 because it is the image that is shown. Now we are going to set our variable to be a boolean value. Either it is found (true) or it is not
+                    (false):
+                </p>
+                <code>hidePassImg =hidePassImg&lt;0;</code>
+                <p>Now we can write the if/then statement. Right now, just write the skeleton on the if/then statement without the commands that will be run for each choice.</p>
+                <p>Now let's focus on the first part of our if statement. If hidePassImg is true, meaning that the hide image is showing. That means that they clicked on the hide image icon so that it will change to the show image icon so they can <i>see</i>                    their password. Two different things going on here. So, let's dissect these two:</p>
+                <p>First - let's change the image. To change the image, we just change the src value. To do that, we can simple use the <i>setAttribute</i> method to change the value:</p>
+                <code> document.getElementById('pass').setAttribute("src", "https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/showPassIcon.png"); </code>
+                <p>Now we need to change the input field from a <i>password</i> field, to a <i>text</i> field:</p>
+                <code>document.getElementById('pass').setAttribute('type', 'text');</code>
+                <p> Now we are ready to write the <i>else</i> part of our if statement. We are going to change the same properties, just give them the other values. That's it! Now you have successfully completed a show/hide password field.</p>
+            </section>
+        </article>
+        <aside>
+            <h1>Code Block</h1>
+            <form id="showPass">
+                <label for="user">Username:</label>
+                <input type="text" /><br/>
+                <label for="pass">Password:</label>
+                <input type="password" name="password" id="pass" /><img id="passimage" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/27019/hidePassIcon.png" /><br/>
+
+                <input type="button" value="Submit" class="submit" />
+
+            </form>
+        </aside>
+    </main>
+    <script type="text/javascript" src="formEnhancement.js"></script>
+</body>
+
+</html>

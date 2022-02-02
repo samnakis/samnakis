@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        More jQuery
+    </title>
+    <style>
+        li {
+            list-style-type: none;
+            padding: 5px;
+            background-color: gray;
+            border-top: 1px solid white;
+            border-bottom: 1px solid black;
+            width: 200px;
+        }
+        
+        div {
+            font-size: 10px;
+            padding: 5px;
+            background-color: gray;
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            display: hide;
+        }
+        
+        .favorite {
+            background-color: hotpink;
+            font-style: italic;
+        }
+        
+        .myText {
+            color: blue;
+            font-size: 125%;
+        }
+        
+        .myOtherText {
+            color: green;
+            font-weight: bold;
+        }
+        
+        #other {
+            background-color: purple;
+            color: white;
+        }
+    </style>
+    <script src="../wdd 308/jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+    <script src="moreJQuery.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <h1>Change this to say I love jQuery!</h1>
+    <h2>Another way to do it....</h2>
+
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>JQuery</li>
+    </ul>
+    <input type="button" id="add" value="Add Item" /><br/><br/>
+    <hr/>
+    <label>Enter Word:</label>
+    <input type="text" name="letterCount" />
+    <p id="letterNum">Keypress Count: <span>0</span></p>
+    <select name="CME419">
+  <option value="HTML">HTML</option>
+  <option value="CSS">CSS</option>
+  <option value="Javascript">Javascript</option>
+  <option value="jQuery">jQuery</option>
+</select>
+    <p id="selection"></p>
+    <div>
+        <p></p>
+    </div>
+
+    <ul id="myList">
+        <li>M&Ms</li>
+        <li>Kitkat</li>
+        <li>Reese's Cups</li>
+        <li>Hershey</li>
+    </ul>
+</body>
+
+</html>

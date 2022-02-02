@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>circle generator</title>
+    <style>
+        .circle {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgba(108, 184, 108, 0.829);
+            position: absolute;
+        }
+        
+        .circleChanged {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: rgba(189, 148, 206, 0.829);
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>circle generator!</h2>
+
+    <input type="button" value="pick number">
+    <p>your number is: <i id="numSelection"></i></p>
+    <input type="button" value="generate!">
+
+    <p id="circleField"></p>
+
+    <script src="circleGen.js"></script>
+</body>
+
+</html>

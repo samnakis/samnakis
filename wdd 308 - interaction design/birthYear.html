@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Birth Year</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            background-color: #d2510c;
+            padding: 10px 20px;
+            color: white;
+        }
+        
+        code {
+            color: rgb(36, 135, 240);
+        }
+        
+        p {
+            margin: 20px 10px;
+        }
+        
+        input {
+            margin: 5px;
+        }
+        
+        form {
+            width: 400px;
+            margin: 10px;
+            background-color: #f4c11b;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        
+        [value="Submit"] {
+            padding: 5px 10px;
+            background-color: rgb(36, 135, 240);
+            color: white;
+            border: 1px solid navy;
+            border-radius: 3px;
+        }
+        
+        body {
+            background-color: rgb(230, 230, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Functions and Objects Assignment</h2>
+    <p>Instructions: When the user clicks on the submit button, text will print on the page that reads as follows:</p>
+    <p><code>Hello, <i>theirName</i>. You were born in <i>the year they were born in.</i></code></p>
+    <form>
+        <label for="fullName">Full Name: <input type="text" name="fullName" id="fullName"/><br/>
+  <label for="age">Current Age:</label>
+        <input type="number" name="age" id="age" />
+        <br/>
+        <input type="button" value="Submit" onclick="yearBorn()" />
+    </form>
+    <p id="messageText">Hello, <i id=firstName>theirName</i>. You were born in <i id=yearBorn>the year they were born in</i>.</p>
+
+    <script src="birthYear.js"></script>
+</body>
+
+</html>

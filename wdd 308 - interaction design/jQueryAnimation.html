@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Animation</title>
+    <style>
+        #showHide,
+        #slideP,
+        #fadeP {
+            background-color: lightblue;
+            margin-top: 10px;
+            padding: 5px;
+            border: 1px solid blue;
+            display: none;
+        }
+        
+        #circle1,
+        #circle2,
+        #circle3 {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin: 20px;
+        }
+        
+        #circle1 {
+            background-color: crimson;
+        }
+        
+        #circle2 {
+            background-color: purple;
+            position: relative;
+        }
+        
+        #circle3 {
+            background-color: seaGreen;
+            position: relative;
+        }
+        
+        #myBox {
+            position: absolute;
+            top: 0;
+            right: 5%;
+        }
+        
+        ul li {
+            list-style-type: none;
+            background-color: rgb(0, 150, 150);
+            line-height: 150%;
+            /*border-top:1px solid white;*/
+            border-bottom: 1px solid white;
+            padding: 7px 14px;
+            width: 200px;
+        }
+        
+        input {
+            background-color: teal;
+            border: none;
+            border-radius: 5px;
+            padding: 4px 8px;
+            color: white;
+            position: relative;
+            left: 40px;
+            margin-bottom: 25px;
+        }
+        
+        #boundingBox {
+            border: 1px solid green;
+            margin: 10px;
+            width: 400px;
+        }
+        
+        #progressBar {
+            background-color: #98bf21;
+            height: 50px;
+            width: 1px;
+            border: 1px solid green;
+        }
+    </style>
+    <script src="../wdd 308/jQuery/jquery-3.6.0.min.js" rel="text/javascript"></script>
+</head>
+
+<body>
+    <h3>Show/Hide Effects</h3>
+    <input type="button" value="Show" id="show" />
+    <input type="button" value="Hide" id="hide" />
+    <input type="button" value="Show/Hide" id="toggle" />
+    <div id="showHide">This paragraph will show and hide content.</div>
+    <h3>Sliding Effects</h3>
+    <input type="button" value="Slide In" id="sIn" />
+    <input type="button" value="Slide Out" id="sOut" />
+    <input type="button" value="Toggle Slide" id="sToggle" />
+    <div id="slideP">This paragraph will slide in and out.</div>
+    <h3>Fading Effects</h3>
+    <input type="button" value="Fade In" id="fIn" />
+    <input type="button" value="Fade Out" id="fOut" />
+    <input type="button" value="Partial Fade" id="fToggle" />
+    <div id="fadeP">This paragraph will fade in and out.</div>
+    <div id="circle1"></div>
+    <div id="circle2"></div>
+    <div id="circle3"></div>
+
+
+
+    <div id="myBox">
+        <ul id="myList">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>PHP</li>
+        </ul>
+        <input type="button" value="Add Item" id="addBtn" />
+    </div>
+    <script src="jQueryAnimation.js" rel="text/javascript"></script>
+</body>
+
+</html>

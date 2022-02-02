@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript: Form Enhancements</title>
+    <style>
+        body {
+            background-color: seaGreen;
+        }
+        
+        p {
+            display: inline;
+            margin-left: 10px;
+            color: red;
+        }
+        
+        div {
+            background-color: white;
+            padding: 1em;
+            border: 2px solid black;
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="user">username:</label>
+        <input type="text" name="user" id="user" /><br/>
+        <label for="pass1">Password:</label>
+        <input type="text" name="pass1" id="pass1" />
+        <p>Must be between 8-10 characters</p><br/>
+        <label for="pass2">Password:</label>
+        <input type="text" name="pass2" id="pass2" />
+        <br/>
+        <input type="submit" id="submit" value="Register" />
+    </div>
+    <h2 id="added"></h2>
+
+    <div>
+        <label for="user">username:</label>
+        <input type="text" name="user" id="loginUser" /><br/>
+        <label for="pass1">Password:</label>
+        <input type="text" name="pass1" id="loginPass" />
+        <input type="submit" id="login" value="LOGIN" />
+        <h3 id="loginText"></h3>
+    </div>
+
+    <script type="text/javascript" src="loginPage.js"></script>
+</body>
+
+</html>

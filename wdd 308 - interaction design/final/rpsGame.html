@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>rock, paper, scissors</title>
+    <style>
+        img {
+            height: 100px;
+            width: auto;
+        }
+        
+        h4 {
+            color: green;
+        }
+        
+        #p1Win {
+            color: red;
+        }
+        
+        #p2Win {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>rock, paper, scissors!</h1>
+    <input type="button" value="play game!">
+
+    <h2>player 1</h2>
+    <div id="p1"></div>
+
+    <h2>player 2</h2>
+    <div id="p2"></div>
+
+    <h3>result</h3>
+    <h4 id="result"></h4>
+    <p>games played: <i id="games"></i></p>
+    <p>player 1 wins: <i id="p1Win"></i></p>
+    <p>player 2 wins: <i id="p2Win"></i></p>
+    <p>ties: <i id="ties"></i></p>
+
+    <script src="rpsGame.js"></script>
+</body>
+
+</html>
