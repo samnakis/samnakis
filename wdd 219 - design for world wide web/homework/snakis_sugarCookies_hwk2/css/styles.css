@@ -1,0 +1,148 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+body {
+    background-color: rgb(216, 84, 150);
+}
+
+.container {
+    background-color: rgb(136, 192, 136);
+    border: 3px solid rgb(255, 235, 205);
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(216, 84, 150);
+    font-family: 'Quicksand', sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    color: rgb(216, 84, 150);
+    font-family: 'Quicksand', sans-serif;
+}
+
+h3 {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25;
+}
+
+figcaption {
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#headerDescription {
+    margin: 20px;
+    border-bottom: 5px dotted rgb(255, 235, 205);
+}
+
+.leftAlign {
+    float: left;
+    width: 40%;
+}
+
+table {
+    width: 300px;
+    font-size: 20px;
+    text-align: left;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    margin: 50px;
+    padding: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#section1::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#ingredients {
+    margin: 20px;
+    border-bottom: 5px dotted rgb(255, 235, 205);
+    border-top: 5px dotted rgb(255, 235, 205);
+}
+
+#directions {
+    margin: 20px;
+    border-bottom: 5px dotted rgb(255, 235, 205);
+}
+
+.centerText {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15px;
+}
+
+ul {
+    line-height: 1.25;
+    font-family: 'Roboto', sans-serif;
+}
+
+ol {
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(59, 90, 59)
+}
+
+
+/* IMAGES */
+
+img {
+    display: block;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 5px;
+    border: 10px double rgb(216, 84, 150);
+  }
