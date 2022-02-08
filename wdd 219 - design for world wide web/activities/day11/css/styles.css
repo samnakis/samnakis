@@ -1,0 +1,106 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+body {
+    background-color: darkblue;
+}
+
+.container {
+    width: 1200px;
+    background-color: lightgray;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 35px;
+    text-align: center;
+}
+
+.BlockA {
+    width: 800px;
+    height: 600px;
+    background-color: gray;
+    padding: 30px;
+    border: 10px dotted black;
+    margin: 20px auto;
+}
+
+.myBlock {
+    width: 600px;
+    height: 600px;
+    color: peru;
+    background-color: darkolivegreen;
+    padding: 20px;
+    border: 5px dotted papayawhip;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.myBlock2 {
+    width: 200px;
+    height: 200px;
+    color: tan;
+    background-color: sienna;
+    padding: 50px;
+    border: 10px dashed steelblue;
+    margin: 10px auto;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}
+
+figure {
+    margin: 1.0em 0 0;
+}
+
+figcaption {
+    font-size: 20px;
+    margin: 1.0em 0 2.0em;
+}
+
+.left-align {
+    float: left;
+    width: 45%;
+}
+
+.right-align {
+    float: right;
+    width: 45%;
+}
+
+.group::after {
+    content: "";
+    display: table;
+    clear: both;
+}

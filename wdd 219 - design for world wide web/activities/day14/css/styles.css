@@ -1,0 +1,78 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+.container {
+    background-color: #f15093; /*bright pink*/
+    width: 1000px;
+    margin: 0 auto;
+    border: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+.box1 {
+    background-color: #7cd374;  /*bright green*/
+    width: 500px;
+    margin: 35px auto;
+    border: 5px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+h1 {
+    color: #fdeaf2; /*muted pink*/
+    font-family: 'Fredoka One', cursive;
+}
+
+#name {
+    color: #c0e4bc; /*muted green*/
+    font-size: 46px;
+    font-family: 'Fascinate', cursive;
+}
+
+h2 {
+    font-family: 'La Belle Aurore', cursive;
+}
+
+#body1 {
+    font-family: 'Work Sans', sans-serif;
+}
+
+#body2 {
+    font-family: 'Mr De Haviland', cursive;
+}
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

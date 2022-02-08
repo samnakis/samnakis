@@ -1,0 +1,109 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+
+
+/* LISTS */
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* margin: 25px; */
+}
+
+ul {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 250px;
+    background-color: lightgray;
+    /* list-style: inside; */
+    list-style-type: circle;
+    margin: 25px;
+}
+
+
+
+/* FORMS*/
+
+p {
+    width: 400px;
+    /* background-color: yellow; */
+    margin: 15px 25px;
+}
+
+.user {
+    border: 2px solid rgb(190, 190, 190);
+    width: 400px;
+    margin: 30px;
+}
+
+.button {
+    padding: 5px 5px 5px 75px;
+}
+
+
+/* TABLES */
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+table {
+    width: 600px;
+    /* background-color: coral; */
+}
+
+th, td {
+    padding: 7px;
+}
+
+th {
+    text-transform: uppercase;
+    border-bottom: 3px solid gray;
+    border-top: 1px solid gray;
+}
+
+tr.even {
+    background-color: rgb(228, 228, 228);
+}
+
+tr:hover {
+    background-color: #c3e6e5;
+}
+
+.money {
+    text-align: right;
+}
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

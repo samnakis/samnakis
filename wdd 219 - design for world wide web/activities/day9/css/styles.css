@@ -1,0 +1,88 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/*
+    UTILITIES
+*/
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+/* Our CSS Styles */
+
+p {
+    font-family: Arial;
+}
+
+h1 {
+    color: gray;
+}
+
+#special {
+    color: black;
+}
+
+.first_paragraph {
+    color: red;
+}
+
+#lead_story {
+    background: yellow;
+}
+
+#greeny {
+    color: green;
+}
+
+/* my css styles */
+
+p {
+    color: olive;
+}
+
+h1 {
+    font-family: Verdana;
+}
+
+.heading {
+    background: peachpuff;
+}
+
+.first_half {
+    font-family: monospace;
+}
+
+#highlight {
+    background: skyblue;
+}
+
+#second_area {
+    color: goldenrod;
+}
+
+#different_paragraph {
+    background: hotpink;
+}
+
+#unique_paragraph {
+    font-family: cursive;
+}

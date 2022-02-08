@@ -1,0 +1,91 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+}
+
+/* TABLE ONE */
+
+table.one {
+    width: 400px;
+    border: 2px solid black;
+}
+
+th.one {
+    padding: 10px;
+    text-align: left;
+}
+
+td.one {
+    padding: 7px;
+}
+
+tr.header {
+    background-color: rgb(231, 101, 84);
+    color: white;
+}
+
+tr.odd {
+    background-color: rgb(245, 245, 245);
+}
+
+
+/* TABLE TWO */
+
+table.two {
+    width: 300px;
+}
+
+th.two {
+    padding: 15px;
+    color: white;
+    background-color: rgb(47, 168, 83);
+    text-align: right;
+    border: 2px solid white;
+}
+
+td.two {
+    padding: 15px;
+    background-color: rgb(220, 220, 220);
+    border: 2px solid white;
+}
+
+
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

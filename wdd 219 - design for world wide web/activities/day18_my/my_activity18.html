@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my activity 18</title>
+
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>
+            <span style='color: rgb(216, 90, 68)'>c</span>
+            <span style='color: rgb(224, 113, 39)'>o</span>
+            <span style='color: rgb(243, 196, 40)'>l</span>
+            <span style='color: rgb(71, 172, 67)'>o</span>
+            <span style='color: rgb(47, 157, 201)'>r</span>
+            <span style='color: rgb(145, 82, 218)'>s</span>
+        </h1>
+
+    </br>
+
+        <form class="MC" action="http://www.example.com/subscribe.php" method="get">
+            <p>which of the following colors do you like?</br><i>(you can select multiple options by holding down control on a pc or command on a mac while selecting)</i></p>
+            <p>
+                <select name="colors" size="7" multiple="multiple">
+                    <option value="red" selected="selected">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+            </p>
+            <p><input type="submit" name="send" value="Submit"/></p>
+        </form>
+
+    </br></br>
+
+        <h2>favorite colors</h2>
+        <table CELLSPACING=0 CELLPADDING=0>
+            <tr class="header">
+                <th>color</th>
+                <th>&percnt; of women who favor it</th>
+            </tr>
+
+            <tr class="red">
+                <td>red</td>
+                <td>9</td>
+            </tr>
+
+            <tr class="orange">
+                <td>orange</td>
+                <td>3</td>
+            </tr>
+
+            <tr class="yellow">
+                <td>yellow</td>
+                <td>6</td>
+            </tr>
+
+            <tr class="green">
+                <td>green</td>
+                <td>19</td>
+            </tr>
+
+            <tr class="blue">
+                <td>blue</td>
+                <td>29</td>
+            </tr>
+
+            <tr class="purple">
+                <td>purple</td>
+                <td>27</td>
+            </tr>
+
+            <tr class="pink">
+                <td>pink</td>
+                <td>9</td>
+            </tr>
+        </table>
+
+    </br></br>
+
+
+        <form class="write" action="http://www.example.com/subscribe.php" method="get">
+            <p>what's your favorite color that has not been listed?</p>
+            <textarea name="comments" cols="30" rows="1">type here...</textarea>
+            <p><input type="submit" name="send" value="Submit"/></p>
+        </form>
+
+        <div image_box>
+            <img src="images/rainbow.png" title="rainbow" alt="rainbow"> 
+        </div>
+    </div>
+</body>
+</html>

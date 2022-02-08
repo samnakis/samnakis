@@ -1,0 +1,77 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+body {
+    background: url("../images/books.jpg") fixed;
+    background-size: cover;
+}
+
+.container {
+    width: 1000px;
+    margin: 35px auto;
+    border: 1px solid black; 
+    padding: 50px;
+    background-color: white;   
+}
+
+.navigation_bar {
+    position: static;
+    background-color: rgb(162, 201, 214);
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    margin: 35px auto;
+    border: 1px solid black;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(231, 152, 152);
+    font-size: 28px;
+    text-align: center;
+    width: 100%;
+    margin: 25px auto;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

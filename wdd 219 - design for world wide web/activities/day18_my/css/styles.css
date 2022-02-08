@@ -1,0 +1,177 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+body {
+    background: url("../images/rainbowBG.jpg") fixed;
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 800px;
+    margin: 50px auto;
+    border: 5px dotted rgb(73, 73, 73); 
+    padding: 50px;
+    background-color: rgb(240, 239, 236);   
+}
+
+h1 {
+    width: 280px;
+    font-family: 'Chango', cursive;
+    font-size: 46px;
+    border-bottom: 3px solid rgb(39, 36, 36);
+}
+
+h2 {
+    color: rgb(54, 52, 52);
+}
+
+table {
+    width: 200px;
+    height: 300px;
+    border: solid 1px rgb(252, 252, 252);
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    
+}
+
+tr.header {
+    background-color: rgb(150, 150, 150);
+    color: white;
+}
+
+
+
+/* change colors of each row */
+
+tr.red {
+    background-color: rgb(194, 101, 101);
+}
+
+tr.orange {
+    background-color: rgb(231, 149, 82);
+}
+
+tr.yellow {
+    background-color: rgb(236, 209, 119);
+}
+
+tr.green {
+    background-color: rgb(119, 167, 127);
+}
+
+tr.blue {
+    background-color: rgb(141, 209, 221);
+}
+
+tr.purple {
+    background-color: rgb(190, 154, 236);
+}
+
+tr.pink {
+    background-color: rgb(235, 160, 212);
+}
+
+
+
+td, th {
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid rgb(252, 252, 252);
+}
+
+
+
+/* change individual hover colors */
+
+tr.red:hover {
+    background-color: rgb(136, 33, 33);
+    color: white;
+}
+
+tr.orange:hover {
+    background-color: rgb(182, 87, 9);
+    color: white;
+}
+
+tr.yellow:hover {
+    background-color: rgb(206, 163, 21);
+    color: white;
+}
+
+tr.green:hover {
+    background-color: rgb(35, 109, 47);
+    color: white;
+}
+
+tr.blue:hover {
+    background-color: rgb(18, 140, 161);
+    color: white;
+}
+
+tr.purple:hover {
+    background-color: rgb(80, 30, 145);
+    color: white;
+}
+
+tr.pink:hover {
+    background-color: rgb(209, 28, 155);
+    color: white;
+}
+
+
+/* form css */
+
+
+form.MC {
+    width: 500px;
+}
+
+form.MC select {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: 2px dashed black;
+}
+
+form.write textarea {
+    color: rgb(179, 96, 109);
+}
+
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}
