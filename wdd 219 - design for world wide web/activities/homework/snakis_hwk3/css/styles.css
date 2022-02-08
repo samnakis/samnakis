@@ -1,0 +1,179 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+body {
+    /* background: url("../images/cream_background.jpg") fixed; */
+    background: url("../images/cream_background_photoshop.jpg") fixed;
+    background-size: cover;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    width: 1000px;
+    margin: 50px auto;
+    border: 5px solid rgb(235, 153, 153); 
+    padding: 50px;
+    background-color: rgb(199, 235, 199);
+}
+
+.header {
+    width: auto;
+    height: 65px;
+    margin: 20px auto;
+    text-align: center;
+    background-color: rgb(113, 158, 243);
+}
+
+h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+h2 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+    color: white;
+}
+
+h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 30px;
+    color: rgb(63, 94, 63);
+    text-align: center;
+}
+
+h4 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 22px;
+    color: rgb(172, 93, 93);
+}
+
+h5 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 22px;
+    color: rgb(172, 93, 93);
+    text-align: center;
+}
+
+
+
+/* form css */
+
+.forms {
+    width: 100%;
+    background-color: rgb(63, 94, 63);
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    display: block;
+}
+
+form {
+    width: 500px;
+    background-color: rgb(235, 153, 153);
+    padding: 10px;
+    margin: 10px;
+    border: 2px dashed white;
+    display: inline-block;
+    text-align: left;
+}
+
+form.text textarea{
+    color: rgb(63, 94, 63);
+}
+
+form.mult select {
+    width: 150px;
+    text-align: center;
+    padding: 10px;
+    border: 2px solid rgb(63, 94, 63);
+}
+
+
+
+ul {
+    font-size: 18px;
+    color: rgb(63, 94, 63);
+    line-height: 1.4;
+}
+
+
+.video_container {
+    border-top: 3px dashed white;
+}
+
+
+/* table css */
+
+table {
+    width: 400px;
+    height: 300px;
+    border: solid 1px rgb(252, 252, 252);
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(235, 153, 153);
+    margin: 0 auto;
+}
+
+.table {
+    border-top: 3px dashed white;
+}
+
+tr.header {
+    background-color: rgb(113, 158, 243);
+    color: white;
+}
+
+tr:hover {
+    background-color: rgb(172, 93, 93);
+    color: white;
+}
+
+td, th {
+    margin: 5px auto;
+    padding: 10px;
+    border: 1px solid rgb(252, 252, 252);
+}
+
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+    padding: 10px;
+}
+
+.images {
+    display: flex;
+    justify-content: space-evenly;
+}
