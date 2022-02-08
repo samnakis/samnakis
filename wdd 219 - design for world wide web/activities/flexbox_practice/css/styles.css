@@ -1,0 +1,75 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: lightgray;
+    height: 1000px;
+}
+
+.bottom {
+    background-color: rgb(80, 51, 51);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.box_bottom {
+    background-color: lemonchiffon;
+    padding: 3.0em;
+    margin: 2.0em;
+    text-align: center;
+    flex-flow: row wrap;
+}
+
+.top {
+    background-color: gold;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.box_top {
+    background-color: lemonchiffon;
+    padding: 3.0em;
+    margin: 2.0em;
+    text-align: center;
+    flex: auto;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

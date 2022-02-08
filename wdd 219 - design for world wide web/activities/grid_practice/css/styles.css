@@ -1,0 +1,79 @@
+/* natural box model */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*  UTILITIES */
+
+/* hides an element, but not from screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/* no break */
+.nobr {
+    white-space: nowrap;
+}
+
+
+/* STRUCTURE */
+
+.container {
+    width: 90%;
+    /* height: 1000px; */
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+.main_box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.vertical_box1 {
+    width: 40%;
+    padding: 3.0em;
+    margin: 2.0em;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    /* background-color: palevioletred; */
+}
+
+.vertical_box2 {
+    width: 40%;
+    height: 2000px;
+    padding: 3.0em;
+    margin: 2.0em;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: plum;
+}
+
+.horizontal_box {
+    width: 500px;
+    height: 500px;
+    margin: 30px auto;
+    background-color: rebeccapurple;
+}
+
+
+/* IMAGES */
+
+img {
+    width: 100%;
+    display: block;
+}

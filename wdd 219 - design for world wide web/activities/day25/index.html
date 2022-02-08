@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>owl demo</title>
+
+    <!-- resets browser defaults -->
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <!-- custom styles -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- plugin link -->
+    <link rel="stylesheet" href="plugin/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="plugin/assets/owl.theme.default.min.css" />
+
+    <style>
+        .owl-next span, .owl-prev span {
+            font-size: 300%;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+
+        <h1>owl container</h1>
+
+        <div class="owl-carousel owl-theme">
+            <a href="#"> <img src="images/kitten-1.jpg" alt="kitten 1"> </a>
+            <a href="#"> <img src="images/kitten-2.jpg" alt="kitten 2"> </a>
+            <a href="#"> <img src="images/kitten-3.jpg" alt="kitten 3"> </a>
+            <!-- <a href="#"> <img src="images/kitten-4.jpg" alt="kitten 4"> </a> -->
+
+            <a href="#"> <img src="images/kitten-1.jpg" alt="kitten 1"> </a>
+            <a href="#"> <img src="images/kitten-2.jpg" alt="kitten 2"> </a>
+            <a href="#"> <img src="images/kitten-3.jpg" alt="kitten 3"> </a>
+            <!-- <a href="#"> <img src="images/kitten-4.jpg" alt="kitten 4"> </a> -->
+
+            <a href="#"> <img src="images/kitten-1.jpg" alt="kitten 1"> </a>
+            <a href="#"> <img src="images/kitten-2.jpg" alt="kitten 2"> </a>
+            <a href="#"> <img src="images/kitten-3.jpg" alt="kitten 3"> </a>
+            <!-- <a href="#"> <img src="images/kitten-4.jpg" alt="kitten 4"> </a> -->
+        </div>
+
+    </div>
+
+
+    <!-- jquery call -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- java script call -->
+    <script src="plugin/jquery.js"></script>
+    <script src="plugin/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:3,
+                    nav:false
+                },
+                1000:{
+                    items:5,
+                    nav:true,
+                    loop:false
+                }
+            }
+        })
+    </script>
+
+</body>
+</html>
